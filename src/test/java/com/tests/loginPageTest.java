@@ -33,8 +33,7 @@ public class loginPageTest {
 	public void login_with_user_ramonaZmole1() {
 		endUser.is_the_home_page();
 		endUser.login_With("ramonazmole1", "ramona1");
-		endUser.selectVacation();
-	
+		
 	}
 		
 }

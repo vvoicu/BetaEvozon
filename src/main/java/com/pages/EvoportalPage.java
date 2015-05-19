@@ -18,7 +18,7 @@ public class EvoportalPage extends PageObject {
     @FindBy(css="[type='submit']")
     private WebElementFacade signInButton;
     
-    @FindBy(css="a[href='http://172.22.4.88:9090/vacation']")
+    @FindBy(css="a[href='http://172.22.4.88:9090']")
     private WebElementFacade Vacations; 
     
     public void enter_userName(String user){
