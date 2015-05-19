@@ -30,28 +30,24 @@ public class AssignedToMeSteps extends ScenarioSteps{
 		}
 	
 	@Step
-	public void check_employeeName(String element){
-		assignedToMeSteps.get_employeeName(element);
+	public void inbox_assignToMe(){
+		assignedToMeSteps.inbox_assignedToMe();
 	}
 	
 	@Step
-	public void check_startDate(){
-		assignedToMeSteps.get_startDate();
+
+	public int get_pageNumber(){
+	 return	assignedToMeSteps.getPageNumber();
 	}
 	
 	@Step
-	public void check_endDate(){
-		assignedToMeSteps.get_endDate();
+	public void click_nextButton(){
+		assignedToMeSteps.press_OnNextButton();
 	}
 	
 	@Step
-	public void check_daysNumber(){
-		assignedToMeSteps.get_daysNumber();
+	public void inbox_assignedToMe(){
+		assignedToMeSteps.inbox_assignedToMe();
 	}
-	
-	@Step
-	public void check_type(String element){
-		assignedToMeSteps.get_type(element);
-	}
-	
+
 }
