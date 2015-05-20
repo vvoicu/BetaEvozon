@@ -31,11 +31,14 @@ public class AssignedToMeTest {
 
 	@Steps
 	public AssignedToMeSteps assignedToMe;
+	
+	public String userName= "alexandra.pandele1";
+	public String userPass = "evoportal";
 
 	@Test
 	public void login_and_verify_assignedToMe_table() {
 		evoportalLogIn.is_the_home_page();
-		evoportalLogIn.login_With("alexandra.pandele1", "evoportal");
+		evoportalLogIn.login_With( userName,userPass);
 		evoportalLogIn.selectVacation();
 		assignedToMe.click_Inbox();
 
