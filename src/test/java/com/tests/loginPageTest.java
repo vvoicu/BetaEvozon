@@ -22,8 +22,8 @@ public class loginPageTest {
 
 	@ManagedPages(defaultUrl = "http://172.22.4.88:9090/login")
 	public Pages pages;
-	public String user = "ramonazmole1";
-	public String pass = "ramona1";
+	public String user = "ana.stanca1";
+	public String pass = "test1";
 
 	@Steps
 	public loginSteps endUser;
@@ -34,7 +34,7 @@ public class loginPageTest {
 	@Test
 	public void login_with_user() {
 		endUser.is_the_home_page();
-		endUser.login_With("ana.stanca1", "test1");
+		endUser.login_With(user, pass);
 
 	}
 }
