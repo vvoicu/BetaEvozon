@@ -6,7 +6,7 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import net.thucydides.core.pages.PageObject;
 
 
-@DefaultUrl("http://172.22.4.88:9090/login")
+//@DefaultUrl("http://172.22.4.88:9090/login")
 public class EvoportalPage extends PageObject {
 
     @FindBy(id="_58_login")
@@ -18,7 +18,7 @@ public class EvoportalPage extends PageObject {
     @FindBy(css="[type='submit']")
     private WebElementFacade signInButton;
     
-    @FindBy(css="a[href='http://172.22.4.88:9090']")
+    @FindBy(css="a[href='http://172.22.4.88:9090/vacation']")
     private WebElementFacade Vacations; 
     
     public void enter_userName(String user){
@@ -34,6 +34,8 @@ public class EvoportalPage extends PageObject {
     }
     
     public void selectVacation(){
+    	element(Vacations).waitUntilVisible();
     	Vacations.click();
+    	
     }
 }
