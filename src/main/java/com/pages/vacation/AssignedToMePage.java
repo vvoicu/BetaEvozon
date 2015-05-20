@@ -1,18 +1,13 @@
 package com.pages.vacation;
 
-import net.thucydides.core.pages.PageObject;
-
 import java.util.ArrayList;
 import java.util.List;
 
 import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
-import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 
-import org.jruby.ir.operands.Array;
-import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
 

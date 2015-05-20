@@ -3,12 +3,11 @@ package com.pages.vacation;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.xalan.templates.ElemApplyImport;
-import org.openqa.selenium.WebElement;
-
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
+
+import org.openqa.selenium.WebElement;
 
 @DefaultUrl("http://172.22.4.88:9090")
 public class InboxOthersPage extends PageObject {
