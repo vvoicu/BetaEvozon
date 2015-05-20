@@ -1,59 +1,73 @@
 package com.steps.vacation;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.pages.vacation.myRequestsPage.Structura;
 import com.pages.vacation.LeftMenuPage;
 import com.pages.vacation.myRequestsPage;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-
+import java.util.List;
 
 public class myRequestsSteps extends ScenarioSteps {
+	
+	List<Structura> listaElemente = new ArrayList<Structura>();
+	
 	LeftMenuPage leftMenu;
 	myRequestsPage myRequests;
 
 	@Step
-	public void selectMyRequests() {
-		leftMenu.selectMyRequests();
+	public void MyRequestsList() {
+		myRequests.takeMyRequestList(listaElemente);
 	}
+	
+ 
+	 @Step
+	 public void getStartDate(List<String> startDate1) {
+		 myRequests.getStartDate(startDate1);
+	  
+	 }
+	 
+	 @Step
+	 public void getEndDate(List<String> endDate1) {
+		 myRequests.getEndDate(endDate1);
+	  
+	 }
+	 
+	 @Step
+	 public void getDays(List<String> days) {
+		 myRequests.getDays(days);
+	  
+	 }
+	 
+	 @Step
+	 public void getType(List<String> type1) {
+		 myRequests.getType(type1);
+	  
+	 }
+	 @Step
+	 public void MyRequests(List<Structura> MyRequests) {
+		 myRequests.takeMyRequestList(MyRequests);
+		}
+	 
+	 @Step
+	 public void nextPage() {
+		 myRequests.clickNextPageButton();
+		}
+	 
+	 @Step
+	 public String sizeOfNextPage() {
+			return myRequests.sizeOfNextPage();
+		}
+	 
+	 public void printElementFromMyRequest(int i) {
+			System.out.println("Elementul de la categoria " + i +" "+ "contine: "
+					+ listaElemente.get(i).startDate + " "
+					+ listaElemente.get(i).endDate + " " + listaElemente.get(i).endDate
+					+ " " + listaElemente.get(i).days + " "
+					+ listaElemente.get(i).type);
 
-	@Step
-	public void selectApproved() {
-		myRequests.selectAproved();
-	}
-
-	@Step
-	public void selectSpecialVacation() {
-		myRequests.selectSpecialVacation();
-	}
-
-	@Step
-	public void selectPending() {
-		myRequests.selectPending();
-	}
-
-	@Step
-	public void selectApplyButton() {
-		myRequests.applyButton();
-	}
-	
-	@Step
-	public void checkIfTypeIsPresent(String typeColumnTitle) {
-		myRequests.checkIfTypeIsPresent(typeColumnTitle);
-	}
-	
-	@Step
-	public void checkIfStatusIsPresent(String statusColumn){
-		myRequests.checkIfStatusIsPresent(statusColumn);
-	}
-	
-	@Step
-	public void selectStatus(int x){
-		myRequests.selectStatus(x);
-	}
-	
-	@Step 
-	public void selectWithdraw(){
-		myRequests.selectWithdraw();
-	}
-	
+		}
 }
