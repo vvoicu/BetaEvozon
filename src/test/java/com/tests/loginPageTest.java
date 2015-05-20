@@ -30,10 +30,10 @@ public class loginPageTest {
     
 	@Issue("#WIKI-1")
 	@Test
-	public void login_with_user_ramonaZmole1() {
+	public void login() {
 		endUser.is_the_home_page();
-		endUser.login_With("ramonazmole1", "ramona1");
-		endUser.selectVacation();
+		endUser.login_With("ana.stanca1", "test1");
+		
 	
 	}
 		
