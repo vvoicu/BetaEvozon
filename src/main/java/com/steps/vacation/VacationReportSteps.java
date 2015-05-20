@@ -1,7 +1,7 @@
 package com.steps.vacation;
 
-import com.pages.VacationReportPage;
 import com.pages.vacation.LeftMenuPage;
+import com.pages.vacation.VacationReportPage;
 import com.pages.vacation.myRequestsPage;
 
 import net.thucydides.core.annotations.Step;

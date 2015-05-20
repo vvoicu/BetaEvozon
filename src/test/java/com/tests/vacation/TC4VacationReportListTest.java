@@ -1,4 +1,4 @@
-package com.tests;
+package com.tests.vacation;
 
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Managed;
