@@ -1,4 +1,4 @@
-package com.tests;
+package com.tests.vacation;
 
 import java.util.ArrayList;
 import java.util.List;
