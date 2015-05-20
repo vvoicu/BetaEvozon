@@ -1,4 +1,4 @@
-package com.steps;
+package com.steps.forum;
 
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.ManagedPages;
@@ -11,8 +11,9 @@ import net.thucydides.junit.runners.ThucydidesRunner;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
+
 import com.pages.EvoportalPage;
-import com.pages.ForumPage;
+import com.pages.forum.ForumPage;
 
 @SuppressWarnings("serial")
 public class ForumSteps extends ScenarioSteps {

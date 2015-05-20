@@ -1,4 +1,4 @@
-package com.steps;
+package com.steps.vacation;
 
 import java.util.List;
 

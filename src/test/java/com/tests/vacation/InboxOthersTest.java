@@ -1,4 +1,4 @@
-package com.tests;
+package com.tests.vacation;
 
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.ManagedPages;
@@ -12,8 +12,8 @@ import org.openqa.selenium.WebDriver;
 
 import com.pages.EvoportalPage;
 import com.pages.vacation.InboxOthersPage;
-import com.steps.InboxOthersSteps;
 import com.steps.loginSteps;
+import com.steps.vacation.InboxOthersSteps;
 @RunWith(ThucydidesRunner.class)
 public class InboxOthersTest {
 	
