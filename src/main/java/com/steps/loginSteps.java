@@ -1,8 +1,9 @@
 package com.steps;
 
-import com.pages.EvoportalPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
+
+import com.pages.EvoportalPage;
 
 public class loginSteps extends ScenarioSteps {
 
