@@ -20,23 +20,21 @@ public class loginPageTest {
 	@Managed(uniqueSession = true)
 	public WebDriver webdriver;
 
-	 @ManagedPages(defaultUrl = "http://172.22.4.88:9090/login")
+	@ManagedPages(defaultUrl = "http://172.22.4.88:9090/login")
 	public Pages pages;
+	public String user = "ramonazmole1";
+	public String pass = "ramona1";
 
-    @Steps
-    public loginSteps endUser;
-    
-    @Steps
-    public myRequestsSteps myRequestsSteps;
-    
-	
+	@Steps
+	public loginSteps endUser;
+
+	@Steps
+	public myRequestsSteps myRequestsSteps;
+
 	@Test
-	public void login() {
+	public void login_with_user() {
 		endUser.is_the_home_page();
 		endUser.login_With("ana.stanca1", "test1");
-		
-
 
 	}
-		
 }

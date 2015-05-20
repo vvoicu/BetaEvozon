@@ -1,4 +1,4 @@
-package com.tests;
+package com.tests.forum;
 
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
@@ -9,8 +9,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
-import com.steps.ForumSteps;
 import com.steps.loginSteps;
+import com.steps.forum.ForumSteps;
 
 @RunWith(ThucydidesRunner.class)
 public class ForumTest {
