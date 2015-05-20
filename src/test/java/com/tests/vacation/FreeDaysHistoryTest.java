@@ -32,11 +32,14 @@ public class FreeDaysHistoryTest {
 
 	@Steps
 	public LeftMenuSteps leftMenu;
-
+	
+	public String user="ramonazmole1";
+	public String pass="ramona1";
+	
 	@Test
 	public void saveListFromTable() {
 		loginUser.is_the_home_page();
-		loginUser.login_With("ramonazmole1", "ramona1");
+		loginUser.login_With(user, pass);
 		loginUser.loginButton();
 		loginUser.selectVacation();
 		leftMenu.selectFreeDaysHistory();
@@ -47,9 +50,10 @@ public class FreeDaysHistoryTest {
 		List<String> number = new ArrayList<String>();
 		List<String> addedData = new ArrayList<String>();
 		List<String> description = new ArrayList<String>();
+		
 		for (int i = 1; i < sizeOfNextPage; i++) {
 			// Operation
-				freeDaysHistory.getOperation(operation);
+			freeDaysHistory.getOperation(operation);
 			System.out.println(operation);
 			// Types
 			freeDaysHistory.getType(types);
@@ -58,19 +62,32 @@ public class FreeDaysHistoryTest {
 			freeDaysHistory.getNumber(number);
 			System.out.println(number);
 			// AddedData
-			
 			freeDaysHistory.getAddedData(addedData);
 			System.out.println(addedData);
 			// Description	
 			freeDaysHistory.getDescription(description);
 			System.out.println(description);
 			// TakeIndex
-			// 
 			freeDaysHistory.indexList();
-			// System.out.println(index);
 			freeDaysHistory.nextPage();
 		}
-		
+					// Operation
+					freeDaysHistory.getOperation(operation);
+					System.out.println(operation);
+					// Types
+					freeDaysHistory.getType(types);
+					System.out.println(types);
+					// Number
+					freeDaysHistory.getNumber(number);
+					System.out.println(number);
+					// AddedData
+					freeDaysHistory.getAddedData(addedData);
+					System.out.println(addedData);
+					// Description	
+					freeDaysHistory.getDescription(description);
+					System.out.println(description);
+					// TakeIndex
+					freeDaysHistory.indexList();
 		freeDaysHistory.printElementFromIndex(9);
 	}
 }
