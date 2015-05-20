@@ -71,6 +71,6 @@ public class FreeDaysHistoryTest {
 			freeDaysHistory.nextPage();
 		}
 		
-		freeDaysHistory.printElementFromIndex(2);
+		freeDaysHistory.printElementFromIndex(9);
 	}
 }
