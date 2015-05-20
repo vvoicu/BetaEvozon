@@ -29,11 +29,16 @@ public class SelectNewsletterTest {
     public NewsletterSteps newsletterSteps ;
     @Steps
     public loginSteps loginsteps;
+  
+    public String userName="ana.stanca1";
+    
+    
+    public String userPassword="test1";
 
     @Test
     public void selectNewsletter(){
     	loginsteps.is_the_home_page();
-    	loginsteps.login_With("ana.stanca1", "test1");
+    	loginsteps.login_With(userName,userPassword);
     	newsletterSteps.clickNewsletter();
     	newsletterSteps.list();
     	newsletterSteps.clickNext();
