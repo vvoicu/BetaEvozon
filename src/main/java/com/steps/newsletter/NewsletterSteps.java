@@ -29,13 +29,8 @@ public class NewsletterSteps extends ScenarioSteps{
 		newsletterPage.getElementFromPage();
 	}
 	
-	//@Step
-	/*public void nextAv(){
-		
-		while (isNextAvailable())
-			
-			
-	}*/
+	
+	
 
 
 }

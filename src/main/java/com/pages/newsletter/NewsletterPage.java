@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
+import net.thucydides.core.annotations.Step;
 //import net.thucydides.core.annotations.findby.FindBy;
 //import net.thucydides.core.pages.WebElementFacade;
 import net.serenitybdd.core.annotations.findby.FindBy;
@@ -73,9 +74,11 @@ public class NewsletterPage extends PageObject {
 		
 	}
 	
-	//public boolean isNextAvailable(){
-		//return element(finishnext).isCurrentlyVisible();
-	//}
+	public boolean isNextAvailable(){
+		return element(finishnext).isCurrentlyVisible();
+	}
+	
+
 	
 	
 
