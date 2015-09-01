@@ -70,11 +70,13 @@ public class FreeDaysHistorySteps extends ScenarioSteps {
 	}
 
 	public void printElementFromIndex(int i) {
-		System.out.println("Elementul de la indexul " + i +" "+ "contine: "
-				+ listaElemente.get(i).operation + " "
-				+ listaElemente.get(i).type + " " + listaElemente.get(i).number
-				+ " " + listaElemente.get(i).addedData + " "
-				+ listaElemente.get(i).description);
-
+		for (int ii = 0; i < i; i++) {
+			System.out.println("Elementul de la indexul " + ii + " "
+					+ "contine: " + listaElemente.get(ii).operation + " "
+					+ listaElemente.get(ii).type + " "
+					+ listaElemente.get(ii).number + " "
+					+ listaElemente.get(ii).addedData + " "
+					+ listaElemente.get(ii).description);
+		}
 	}
 }
